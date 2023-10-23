@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Indicator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-container">
+        <div class="nav-bar">
+            <ul>
+                <li class="active">
+                    <a href="#">
+                        <span class="icon"><img src="img/Home.png" alt=""></span>
+                        <span class="text">home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="img/user.png" alt=""></span>
+                        <span class="text">user</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="img/phone.png" alt=""></span>
+                        <span class="text">contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="img/Settings.png" alt=""></span>
+                        <span class="text">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="img/mail.png" alt=""></span>
+                        <span class="text">email</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            $('.nav-bar ul li').click(function(){
+                $('.nav-bar ul li').removeClass('active');
+                $(this).addClass('active');
+            })
+        })
+    </script>
+</body>
+</html>
